@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.app{
+  padding: 0;
+  margin: 0;
+justify-content: center;
+}
 .first_page {
   display: flex;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-image: url("https://cdn.pixabay.com/photo/2018/07/05/14/45/conference-3518465_1280.jpg");
-  background-size: cover;
+  background-size:contain;
   background-position: center;
   justify-content: center;
   align-items: center;
@@ -106,7 +111,7 @@
 
 .event-list-container {
   position: absolute;
-  overflow-x: hidden;
+  overflow-x: scroll;
   top: 100vh;
   left: 0;
   width: 100%;

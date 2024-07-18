@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import ConferenceEvent from "./ConferenceEvent";
 import AboutUs from "./AboutUs";
@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app">
       <header className="first_page">
         <div className="main_event">
           <div className="first_page_name_btn">
@@ -32,7 +32,7 @@ function App() {
       <div className={`event-list-container ${showVenue ? 'visible' : ''}`}>
         <ConferenceEvent />
       </div>
-    </>
+    </div>
   );
 }
 
